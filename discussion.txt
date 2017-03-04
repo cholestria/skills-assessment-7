@@ -1,0 +1,31 @@
+Recursion
+1. Rucursion is a process in which a function calls itself.
+2. Without a base case, a recursive function will call itself infinitely and eventualy crash.
+
+Graphs
+1. Graph are data structures with nodes that are connected by edges. They may be directional or non-directional.
+2. A graph is different from a tree in that it can contain loops and a graph can have more than one parent node.
+3. Flight paths for an airline could be modelled with a graph.
+
+Performance of Different Data Structures
+
+Data Structure          Index       Search      Add-R       Add-L       Pop-L       Pop-R
+Python List (Array)     O(1)        O(n)        O(1)        O(n)        O(n)        O(1)
+Linked List             O(n)        O(n)        O(1)        O(1)        O(1)        O(n)
+Doubly-Linked List      O(n)        O(n)        O(1)        O(1)        O(1)        O(1)
+Queue (as Array)        X           X           O(1)        X           O(n)        X
+Queue (as LL or DLL)    X           X           O(1)        X           O(1)        X
+Stack ()                X           X           O(1)        X           X           O(1)
+Deque (as DLL)          X           X           O(1)        O(1)        O(1)        O(1)
+
+Data Structure          Get         Add         Delete      Iterate     Memory
+Dictionary (Hash Map)   O(1)        O(1)        O(1)        O(n)        medium
+Set (Hash Map)          O(1)        O(1)        O(1)        O(n)        medium
+Binary Search Tree      Θ(log(n))   Θ(log(n))   Θ(log(n))   O(n)        a lot
+Tree                    Θ(log(n))   Θ(log(n))   Θ(log(n))   Θ(n)        a lot
+
+Sorting
+1. The Bubble Sort algorith compares the first 2 numbers in a list and moves the larger number towards the end of the list. It then compares the 2nd and 3rd numbers and so on for the length of the list. This is repeated until every number is in order.
+2. The Merge Sort algorithm uses recursion to break down a list into a series of lists of one number each. It then uses recursion to combine each list in sorted order so list one with list two and then that combined list with the combination of 3 and 4 until all the mini lists have been recombined into one final sorted list.
+3. The Quicksort algorithm works by chosing a pivot point and assigning every number lower than that pivot to the beginning of the list and every number higher to the right of the pivot number. The algorithm then recursively does this same function to the elements of the list that are lower and higher than the pivot.
+
